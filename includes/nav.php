@@ -25,7 +25,7 @@ function nav_active($key, $active) { return $key === $active ? ' class="active"'
 <header id="navigation">
     <div class="nav-inner">
         <div class="nav-brand">
-            <a href="index.php"><img src="img/BIID foundation_Logo.jpeg" alt="BIID Logo"></a>
+            <a href="index.php"><img src="img/biid-logo.png" alt="BIID Foundation logo"></a>
         </div>
         <nav class="nav-links" id="navLinks">
             <a href="index.php"<?php echo nav_active('home', $active); ?>>Home</a>

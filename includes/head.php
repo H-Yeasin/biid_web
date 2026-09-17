@@ -9,7 +9,9 @@ $page_description = $page_description ?? "BIID Foundation is a Bangladesh-based 
 <title><?php echo htmlspecialchars($page_title); ?></title>
 <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
 <meta name="author" content="BIID Foundation">
-<link rel="icon" href="img/BIID.jpg">
+<link rel="icon" href="img/favicon/favicon-32.png" sizes="32x32">
+<link rel="icon" href="img/favicon/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 
 <!-- Fonts & Icons -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

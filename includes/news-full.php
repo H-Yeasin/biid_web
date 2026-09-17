@@ -54,14 +54,35 @@
         <div class="section-head">
             <p class="eyebrow">Reports</p>
             <h2 class="section-title">Publications</h2>
+            <p class="section-sub">The ICT4D Community Newsletter is a publication initiative by BIID Foundation, supported by PROTIC &mdash; a participatory action research intervention by Oxfam and Monash University &mdash; sharing news, innovations, and ICT-for-development initiatives from grassroots communities.</p>
         </div>
-        <div class="publications-placeholder">
-            <i class="ti ti-file-text"></i>
-            <p>Our publications archive is being prepared and will be added here soon. In the meantime, program-specific resources are available directly through:</p>
-            <div class="btn-row">
-                <a href="https://e-pushti.net/" target="_blank" class="btn btn-secondary">e-Pushti</a>
-                <a href="https://www.nutritionclub-bd.net/" target="_blank" class="btn btn-secondary">Nutrition Club</a>
-                <a href="https://ekrishok.com/" target="_blank" class="btn btn-secondary">e-Krishok</a>
+        <div class="publications-list">
+            <?php
+            $publications = [
+                ['title' => 'ICT4D Community Newsletter — Volume 1, Issue 1', 'file' => 'Newsletter_Volume 1, Issue 1_Print Version.pdf'],
+                ['title' => 'ICT4D Community Newsletter — Volume 1, Issue 2', 'file' => 'Newsletter_Volume 1, Issue 2_Print Version.pdf'],
+                ['title' => 'ICT4D Community Newsletter — Volume 1, Issue 3', 'file' => 'Newsletter_Volume 1, Issue 3_Print Version.pdf'],
+                ['title' => 'ICT4D Community Newsletter — Volume 1, Issue 4', 'file' => 'Newsletter_Volume 1, Issue 4_Print Version.pdf'],
+                ['title' => 'ICT4D Community Newsletter — Volume 2, Issue 1', 'file' => 'Newsletter_Volume 2, Issue 1_Print Version.pdf'],
+            ];
+            foreach ($publications as $pub):
+            ?>
+            <div class="pub-item">
+                <i class="ti ti-file-text"></i>
+                <div>
+                    <strong><?php echo htmlspecialchars($pub['title']); ?></strong>
+                    <span>BIID Foundation &amp; PROTIC (Oxfam / Monash University)</span>
+                </div>
+                <a href="<?php echo rawurlencode($pub['file']); ?>" class="btn btn-secondary btn-sm" target="_blank">Download PDF</a>
+            </div>
+            <?php endforeach; ?>
+            <div class="pub-item">
+                <i class="ti ti-file-text"></i>
+                <div>
+                    <strong>Nutrition Club Newsletter — Issue 01-2025</strong>
+                    <span>Published April 1, 2025</span>
+                </div>
+                <a href="https://e-pushti.net/storage/newsletter/Newsletter-issue-01-2025.pdf" class="btn btn-secondary btn-sm" target="_blank">Download PDF</a>
             </div>
         </div>
     </div>

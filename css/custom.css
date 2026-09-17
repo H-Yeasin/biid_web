@@ -89,7 +89,6 @@ button { font-family: inherit; }
 .btn-ghost:hover { color: var(--g1); }
 .btn-on-dark { background: rgba(255,255,255,0.12); color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
 .btn-on-dark:hover { background: rgba(255,255,255,0.2); }
-.btn-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 
 /* ============================================================
    SHARED SECTION UTILITIES
@@ -578,7 +577,7 @@ button { font-family: inherit; }
    ============================================================ */
 #footer { background: var(--g1); border-top: 0.5px solid rgba(255,255,255,0.1); padding: var(--sp-7) var(--sp-5); }
 .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: var(--sp-6); }
-.footer-logo { height: 48px; width: auto; max-width: 180px; object-fit: contain; margin-bottom: var(--sp-3); background: #fff; border-radius: 6px; padding: 6px 10px; }
+.footer-logo { height: 44px; width: auto; max-width: 200px; object-fit: contain; margin-bottom: var(--sp-3); }
 .footer-grid h5 { color: #fff; font-size: 13px; font-weight: 600; margin-bottom: var(--sp-3); }
 .footer-about p { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.9; }
 .footer-contact { margin-top: var(--sp-3); display: flex; flex-direction: column; gap: var(--sp-2); }
@@ -649,10 +648,18 @@ button { font-family: inherit; }
    ============================================================ */
 .section-wrapper-tight { padding-bottom: 0; }
 .news-full-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--sp-4); }
-.publications-placeholder { text-align: center; background: var(--bgs); border: 1px dashed var(--bd); border-radius: var(--rl); padding: var(--sp-7) var(--sp-5); }
-.publications-placeholder i { font-size: 32px; color: var(--g3); margin-bottom: var(--sp-3); display: block; }
-.publications-placeholder p { font-size: 13.5px; color: var(--ts); max-width: 52ch; margin: 0 auto var(--sp-5); line-height: 1.6; }
-.publications-placeholder .btn-row { justify-content: center; margin-top: 0; }
+.publications-list { display: flex; flex-direction: column; gap: var(--sp-3); }
+.pub-item {
+    display: flex; align-items: center; gap: var(--sp-4); background: #fff;
+    border: 0.5px solid var(--bd); border-radius: var(--r); padding: var(--sp-4);
+}
+.pub-item i { font-size: 22px; color: var(--g3); flex-shrink: 0; }
+.pub-item div { flex: 1; min-width: 0; }
+.pub-item strong { display: block; font-size: 13.5px; font-weight: 600; color: var(--g1); }
+.pub-item span { font-size: 12px; color: var(--ts); }
+@media (max-width: 640px) {
+    .pub-item { flex-wrap: wrap; }
+}
 
 /* ============================================================
    RESPONSIVE

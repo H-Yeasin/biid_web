@@ -4,7 +4,7 @@
 <footer id="footer">
     <div class="footer-grid">
         <div class="footer-about">
-            <img src="img/BIID foundation_Logo.jpeg" alt="BIID Foundation" class="footer-logo">
+            <img src="img/biid-logo-white.png" alt="BIID Foundation logo" class="footer-logo">
             <p>Leading Through Innovation since 2008.</p>
             <div class="footer-contact">
                 <p><b>Address:</b> House 174, Level-2, Apt. B3, Road 02<br>Mohakhali DOHS, Dhaka-1206.</p>
