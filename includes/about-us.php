@@ -3,7 +3,7 @@
      ============================================================ -->
 <section id="aboutUs">
     <div class="section-wrapper">
-        <div style="text-align:center; margin-bottom:2rem;">
+        <div class="section-head">
             <p class="eyebrow">Who We Are</p>
             <h2 class="section-title">About Us</h2>
         </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="about-quote-card">
                 <div class="qt">"</div>
-                <p>It is BIID Foundation's vision to become the market leader in ICT for Development — providing services to both public and private sector stakeholders with a strategic objective of <strong style="color:var(--g4);">Leading Through Innovation.</strong></p>
+                <p>It is BIID Foundation's vision to become the market leader in ICT for Development — providing services to both public and private sector stakeholders with a strategic objective of <strong>Leading Through Innovation.</strong></p>
                 <div class="auth">Md Shahid Uddin Akbar &middot; CEO, BIID Foundation</div>
             </div>
         </div>

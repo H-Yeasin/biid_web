@@ -1,59 +1,29 @@
 <!-- ============================================================
-     HERO SLIDER
+     HERO
      ============================================================ -->
-<section id="home-slider">
-    <div id="slider" class="sl-slider-wrapper">
+<section id="hero">
+    <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-layer"></div>
+        <div class="hero-bg-layer"></div>
+        <div class="hero-bg-layer"></div>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
 
-        <div class="owl-carousel" id="s_slide">
+    <div class="hero-inner">
+        <p class="hero-eyebrow">BIID Foundation &middot; ICT4D</p>
+        <h1>Leading Through Innovation</h1>
+        <p class="hero-sub">Since 2008, BIID Foundation has paired grassroots community work with ICT4D innovation &mdash; from nutrition and agriculture to women's digital empowerment and SME development across Bangladesh.</p>
 
-            <div>
-                <div class="bg-img bg-img-1">
-                    <div class="slide-caption"></div>
-                </div>
-            </div>
-
-            <div>
-                <div class="bg-img bg-img-2">
-                    <div class="slide-caption"></div>
-                </div>
-            </div>
-
-            <div>
-                <div class="bg-img bg-img-3">
-                    <div class="slide-caption"></div>
-                </div>
-            </div>
-
-            <div>
-                <div class="bg-img bg-img-4">
-                    <div class="slide-caption"></div>
-                </div>
-            </div>
-
-            <div>
-                <div class="bg-img bg-img-5">
-                    <div class="slide-caption"></div>
-                </div>
-            </div>
-
+        <div class="hero-cta-row">
+            <a href="#projects" class="btn btn-primary">Explore Our Work</a>
+            <a href="#contact" class="btn btn-on-dark">Partner With Us</a>
         </div>
 
-        <div class="hero-fixed-caption">
-            <div class="caption-content">
-                <h2 class="animated fadeInDown">BIID Foundation</h2>
-                <!--<h2 class="animated fadeInDown">Bangladesh Institute of ICT in Development</h2>-->
-                <span class="animated fadeInDown">Leading Through Innovations</span>
-            </div>
+        <div class="hero-stats">
+            <div class="stat"><div class="stat-num">2008</div><div class="stat-lbl">Founded</div></div>
+            <div class="stat"><div class="stat-num">18</div><div class="stat-lbl">Active Programs</div></div>
+            <div class="stat"><div class="stat-num">37</div><div class="stat-lbl">Partners &amp; Donors</div></div>
+            <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Focus Areas</div></div>
         </div>
-
     </div>
 </section>
-
-<!-- IMPACT STRIP -->
-<div class="impact-strip">
-    <div class="impact-item"><div class="impact-num">INO 2026</div><div class="impact-lbl">Nutrition Olympiad</div></div>
-    <div class="impact-item"><div class="impact-num">Nutri-Mart</div><div class="impact-lbl">Community Food</div></div>
-    <div class="impact-item"><div class="impact-num">e-Pushti</div><div class="impact-lbl">Digital Nutrition</div></div>
-    <div class="impact-item"><div class="impact-num">WIFI DX</div><div class="impact-lbl">Women ICT</div></div>
-    <div class="impact-item"><div class="impact-num">Nirvoya</div><div class="impact-lbl">Cyber Safety</div></div>
-</div>

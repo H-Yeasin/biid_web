@@ -4,9 +4,9 @@
 <section id="testimonials">
     <div class="section-wrapper">
 
-        <div style="text-align:center; margin-bottom:2rem;">
-            <p class="eyebrow" style="color:var(--gs);">Our People</p>
-            <h2 class="section-title" style="color:#fff;">Current Team Members</h2>
+        <div class="section-head">
+            <p class="eyebrow">Our People</p>
+            <h2 class="section-title">Current Team Members</h2>
         </div>
 
         <!-- Group 1: Leadership -->
@@ -96,39 +96,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Group 4: Communications, Social Media & PR -->
-        <!--<div class="team-group">-->
-        <!--    <div class="team-group-header">-->
-        <!--        <h3>Communications, Social Media &amp; PR</h3>-->
-        <!--    </div>-->
-
-        <!--    <div class="team-group-grid">-->
-        <!--        <div class="team-card">-->
-        <!--            <div class="team-photo">-->
-        <!--                <img src="img/members/afroja_asha.jpeg" alt="Afroja Sarmin Asha" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">-->
-        <!--                <div class="team-initial">AA</div>-->
-        <!--            </div>-->
-        <!--            <div class="team-name">Afroja Sarmin Asha</div>-->
-        <!--            <div class="team-role">Coordinator &amp; PR Officer, Nutri Mart</div>-->
-        <!--            <div class="team-bio">-->
-        <!--                Drives coordination, public relations, and marketing efforts across the organization. Serves dual roles as Foundation Coordinator and PR lead for Nutri Mart Bangladesh, handling community engagement, event promotion, and media outreach.-->
-        <!--            </div>-->
-        <!--        </div>-->
-
-        <!--        <div class="team-card">-->
-        <!--            <div class="team-photo">-->
-        <!--                <img src="img/members/Farjana_Eva.jpeg" alt="Farjana Akter Eva" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">-->
-        <!--                <div class="team-initial">FE</div>-->
-        <!--            </div>-->
-        <!--            <div class="team-name">Farjana Akter Eva</div>-->
-        <!--            <div class="team-role">Communication Associate</div>-->
-        <!--            <div class="team-bio">-->
-        <!--                Supports all organizational communications and outreach initiatives at BIID Foundation. Manages content creation, stakeholder messaging, and ensures consistent brand voice across BIID's programs and campaigns.-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
 
         <!-- Group 5: Nutri Mart -->
         <div class="team-group">

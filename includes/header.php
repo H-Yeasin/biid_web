@@ -27,34 +27,11 @@
             <a href="#aboutUs">About Us</a>
             <a href="#service">Services</a>
             <a href="#clients">Clients &amp; Partners</a>
-            <!--<div class="nav-dropdown">-->
-            <!--    <a href="#projects">Projects & Programmes &#9662;</a>-->
-            <!--    <div class="nav-dropdown-menu">-->
-            <!--        <a href="https://www.nutritionclub-bd.net/">Nutrition Club</a>-->
-            <!--        <a href="https://e-pushti.net/">e-Pushti</a>-->
-            <!--        <a href="https://nutritionolympiad.net/">International Nutrition Olympiad (INO)</a>-->
-            <!--        <a href="#blab">BIID Innovation Lab (B-Lab)</a>-->
-            <!--        <a href="https://ekrishok.com/">e-Krishok</a>-->
-            <!--        <a href="#pledge">Pledge for Her</a>-->
-            <!--        <a href="#nirvoya">Nirvoya</a>-->
-            <!--        <a href="#zero-cost-eas">Zero Cost EAS Model</a>-->
-            <!--        <a href="#bicg">BICG</a>-->
-            <!--        <a href="#girls-cafe">Girls Café</a>-->
-            <!--        <a href="#nca">Nutrition Club Academy</a>-->
-            <!--        <a href="#wifi">WIFI Training Program</a>-->
-            <!--        <a href="#ingenaes">INGENAES</a>-->
-            <!--        <a href="#farmbook">Farmbook</a>-->
-            <!--        <a href="#ground-cover">Ground Cover App</a>-->
-            <!--        <a href="#peer-sme">Peer-to-Peer SME</a>-->
-            <!--        <a href="#sme-online">SME Online Advisory</a>-->
-            <!--        <a href="#intel-easy-steps">Intel Easy Steps</a>-->
-            <!--    </div>-->
-            <!--</div>-->
             <div class="nav-dropdown nav-projects-dropdown">
                 <a href="#projects">Projects &amp; Programmes &#9662;</a>
                 <div class="nav-dropdown-menu">
-            
-                    <a href="#tab-projects" style="font-size:10px; font-weight:700; color:var(--g2); text-transform:uppercase; letter-spacing:1px; background:var(--gl);">
+
+                    <a href="#tab-projects" class="dropdown-heading">
                         Projects
                     </a>
                     <a href="#pledge">Pledge for Her</a>
@@ -68,7 +45,7 @@
                     <a href="#sme-online">SME Online Advisory</a>
                     <a href="#intel-easy-steps">Intel Easy Steps</a>
             
-                    <a href="#tab-programmes" style="font-size:10px; font-weight:700; color:var(--g2); text-transform:uppercase; letter-spacing:1px; background:var(--gl); margin-top:4px;">
+                    <a href="#tab-programmes" class="dropdown-heading">
                         Programmes
                     </a>
                     <a href="#nutrition-club">Nutrition Club</a>
@@ -86,7 +63,7 @@
             <div class="nav-dropdown nav-products-dropdown">
                 <a href="#apps">Products &#9662;</a>
                 <div class="nav-dropdown-menu">
-                    <a href="#apps" style="font-size:10px; font-weight:700; color:var(--g2); text-transform:uppercase; letter-spacing:1px; background:var(--gl);">
+                    <a href="#apps" class="dropdown-heading">
                         Products
                     </a>
                     <a href="#pani">PANI</a>
@@ -94,11 +71,10 @@
                     <a href="#ekrishok-app">e-Krishok Mobile App</a>
                 </div>
             </div>
-            <!--<a href="#apps">Products</a>-->
             <a href="publications.php">Publications</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Involved</button>
+        <button class="btn btn-primary btn-sm nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Involved</button>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
             <span></span><span></span><span></span>
         </button>

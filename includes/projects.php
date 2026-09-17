@@ -52,7 +52,7 @@
         </div>
 
         <div class="project-popup-action">
-            <a href="#" target="_blank" class="project-popup-btn" id="projectPopupBtn">Visit Site</a>
+            <a href="#" target="_blank" class="btn btn-primary project-popup-btn" id="projectPopupBtn">Visit Site</a>
         </div>
     </div>
 </div>

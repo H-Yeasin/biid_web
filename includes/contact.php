@@ -3,7 +3,7 @@
      ============================================================ -->
 <section id="contact">
     <div class="section-wrapper">
-        <div style="text-align:center; margin-bottom:2rem;">
+        <div class="section-head">
             <p class="eyebrow">Get In Touch</p>
             <h2 class="section-title">Contact Us</h2>
             <p class="section-sub">Leave us a message and we'll get back to you.</p>
@@ -38,7 +38,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
                     </div>
-                    <button type="submit" name="submit" class="form-submit">Send Message</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
 
@@ -66,7 +66,6 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.7393673261544!2d90.39725246953445!3d23.784528798665434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7000bcfe04d%3A0xca51ece6e1c119ff!2sBangladesh%20Institution%20of%20ICT%20in%20Development(BIID)-Head%20Office!5e0!3m2!1sen!2sbd!4v1772085302288!5m2!1sen!2sbd"
                         width="100%"
                         height="220"
-                        style="border:0; border-radius:10px;"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">

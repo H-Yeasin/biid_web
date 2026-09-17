@@ -59,8 +59,8 @@
             <p>BIID Foundation envisions vast range of opportunities in the ICT4D sector in developing countries; using the existing capacity, expertise and knowledge of BIID Foundation, we wish to be engaged in this sector providing different services and solutions for all sector of the society.</p>
             <p>Currently BIID Foundation is working in numerous sectors using ICTs to reach customers and partners more efficiently and to bring relevant services closer to communities in which citizens reside.</p>
             <div class="welcome-actions">
-                <a href="#aboutUs" class="btn-green">Read More</a>
-                <a href="UK/" class="btn-outline-green" aria-label="Visit BIID Foundation UK">
+                <a href="#aboutUs" class="btn btn-primary">Read More</a>
+                <a href="UK/" class="btn btn-secondary" aria-label="Visit BIID Foundation UK">
                     <i class="ti ti-world"></i> BIID Foundation UK <i class="ti ti-arrow-up-right"></i>
                 </a>
             </div>
