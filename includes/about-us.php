@@ -5,7 +5,7 @@
     <div class="section-wrapper">
         <div class="section-head">
             <p class="eyebrow">Who We Are</p>
-            <h2 class="section-title">About Us</h2>
+            <h1 class="section-title">About Us</h1>
         </div>
         <div class="about-grid">
             <div class="about-text">

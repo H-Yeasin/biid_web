@@ -1,25 +1,3 @@
-/* ============================================================
-   TAB SWITCHER
-   ============================================================ */
-function switchTab(id, btn) {
-    document.querySelectorAll('.tab-content').forEach(function (t) {
-        t.classList.remove('active');
-    });
-
-    document.querySelectorAll('.tab-btn').forEach(function (b) {
-        b.classList.remove('active');
-    });
-
-    var tab = document.getElementById('tab-' + id);
-    if (tab) {
-        tab.classList.add('active');
-    }
-
-    if (btn) {
-        btn.classList.add('active');
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function () {
 
     /* ============================================================
@@ -55,159 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /* ============================================================
-       DROPDOWN NAVIGATION FIX
-       ============================================================ */
-    var programmeIds = [
-        'nutrition-club',
-        'e-pushti',
-        'ino',
-        'blab',
-        'ekrishok',
-        'bicg',
-        'girls-cafe',
-        'nca'
-    ];
-
-    var projectIds = [
-        'pledge',
-        'nirvoya',
-        'zero-cost-eas',
-        'wifi',
-        'ingenaes',
-        'farmbook',
-        'ground-cover',
-        'peer-sme',
-        'sme-online',
-        'intel-easy-steps'
-    ];
-
-    var productIds = [
-        'apps',
-        'pani',
-        'mojai-mojai',
-        'ekrishok-app'
-    ];
-
-    function activateTab(tabName) {
-        var btn = document.querySelector('.tab-btn[onclick*="' + tabName + '"]');
-        switchTab(tabName, btn);
-    }
-
-    function scrollWithOffset(id) {
-        if (id === 'body') {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-            return;
-        }
-
-        var target = document.getElementById(id);
-
-        if (!target) {
-            return;
-        }
-
-        var offset = 100;
-        var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
-    }
-
-    document.querySelectorAll('.nav-dropdown-menu a[href^="#"]').forEach(function (link) {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            var id = this.getAttribute('href').replace('#', '');
-
-            if (id === 'tab-projects') {
-                activateTab('projects');
-
-                setTimeout(function () {
-                    scrollWithOffset('projects');
-                }, 150);
-
-                return;
-            }
-
-            if (id === 'tab-programmes') {
-                activateTab('programmes');
-
-                setTimeout(function () {
-                    scrollWithOffset('projects');
-                }, 150);
-
-                return;
-            }
-
-            if (projectIds.includes(id)) {
-                activateTab('projects');
-
-                setTimeout(function () {
-                    scrollWithOffset(id);
-                }, 150);
-
-                return;
-            }
-
-            if (programmeIds.includes(id)) {
-                activateTab('programmes');
-
-                setTimeout(function () {
-                    scrollWithOffset(id);
-                }, 150);
-
-                return;
-            }
-
-            if (productIds.includes(id)) {
-                setTimeout(function () {
-                    scrollWithOffset(id);
-                }, 150);
-
-                return;
-            }
-        });
-    });
-
-    /* ============================================================
-       NORMAL SMOOTH SCROLL
-       This ignores dropdown links to prevent double jumping.
-       ============================================================ */
-    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-        link.addEventListener('click', function (e) {
-            if (this.closest('.nav-dropdown-menu')) {
-                return;
-            }
-
-            var href = this.getAttribute('href');
-
-            if (!href || href === '#') {
-                return;
-            }
-
-            var id = href.replace('#', '');
-
-            if (id === 'body') {
-                e.preventDefault();
-                scrollWithOffset('body');
-                return;
-            }
-
-            var target = document.getElementById(id);
-
-            if (target) {
-                e.preventDefault();
-                scrollWithOffset(id);
-            }
-        });
-    });
-
-    /* ============================================================
        HIDE BREAKING NEWS BAR ON SCROLL DOWN
        ============================================================ */
     var bar = document.getElementById('breaking-news-bar');
@@ -217,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('scroll', function () {
             var currentScroll = window.pageYOffset;
 
-            bar.style.transition = 'transform 0.3s ease';
             bar.style.transform = (currentScroll > last && currentScroll > 80)
                 ? 'translateY(-100%)'
                 : 'translateY(0)';
@@ -227,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /* ============================================================
-       PROJECT POPUP CARD
+       PROJECT POPUP CARD (Our Work page)
        ============================================================ */
     var projectPopupData = {
         'nutrition-club': {

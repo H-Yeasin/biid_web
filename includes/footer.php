@@ -14,13 +14,14 @@
         <div>
             <h5>Quick Links</h5>
             <nav>
-                <a href="#aboutUs">About BIID Foundation</a>
+                <a href="about.php">About BIID Foundation</a>
                 <a href="UK/">BIID Foundation UK</a>
-                <a href="#projects">Projects</a>
-                <a href="#service">Services</a>
-                <a href="#testimonials">Team</a>
-                <a href="publications.php">Publications</a>
-                <a href="#contact">Contact</a>
+                <a href="our-work.php">Projects &amp; Programmes</a>
+                <a href="products.php">Products</a>
+                <a href="team.php">Team</a>
+                <a href="publications.php">News &amp; Publications</a>
+                <a href="partners.php">Partners</a>
+                <a href="contact.php">Contact</a>
             </nav>
         </div>
         <div>

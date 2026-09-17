@@ -5,7 +5,7 @@
     <div class="section-wrapper">
         <div class="section-head">
             <p class="eyebrow">Get In Touch</p>
-            <h2 class="section-title">Contact Us</h2>
+            <h1 class="section-title">Contact Us</h1>
             <p class="section-sub">Leave us a message and we'll get back to you.</p>
         </div>
 

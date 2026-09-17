@@ -15,8 +15,8 @@
         <p class="hero-sub">Since 2008, BIID Foundation has paired grassroots community work with ICT4D innovation &mdash; from nutrition and agriculture to women's digital empowerment and SME development across Bangladesh.</p>
 
         <div class="hero-cta-row">
-            <a href="#projects" class="btn btn-primary">Explore Our Work</a>
-            <a href="#contact" class="btn btn-on-dark">Partner With Us</a>
+            <a href="our-work.php" class="btn btn-primary">Explore Our Work</a>
+            <a href="contact.php" class="btn btn-on-dark">Partner With Us</a>
         </div>
 
         <div class="hero-stats">

@@ -6,7 +6,7 @@
 
         <div class="section-head">
             <p class="eyebrow">Our People</p>
-            <h2 class="section-title">Current Team Members</h2>
+            <h1 class="section-title">Current Team Members</h1>
         </div>
 
         <!-- Group 1: Leadership -->

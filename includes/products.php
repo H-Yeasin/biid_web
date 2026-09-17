@@ -4,7 +4,7 @@
 <section id="apps">
     <div class="section-wrapper">
         <p class="eyebrow">Technology</p>
-        <h2 class="section-title">Our Products</h2>
+        <h1 class="section-title">Our Products</h1>
         <p class="section-sub">ICT-powered tools designed for farmers, entrepreneurs, and communities.</p>
 
         <!-- PANI -->
