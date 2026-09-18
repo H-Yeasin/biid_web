@@ -31,6 +31,6 @@
     <div class="copyright">&copy; <?php echo date('Y'); ?> BIID Innovation Lab (B-Lab). All rights reserved.</div>
   </div>
 </footer>
-<script src="/b-lab/assets/blab.js"></script>
+<script src="/b-lab/assets/js/blab.js"></script>
 </body>
 </html>

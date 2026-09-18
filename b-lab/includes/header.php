@@ -15,14 +15,14 @@ function blab_active($key, $activePage){ return $key === $activePage ? 'active' 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link rel="stylesheet" href="/b-lab/assets/blab.css">
+  <link rel="stylesheet" href="/b-lab/assets/css/blab.css">
 </head>
 <body>
 <div class="top-strip">BIID Innovation Lab (B-Lab) &nbsp;·&nbsp; <strong>Entrepreneurship · Access to Finance · Training · Growth</strong></div>
 <header class="nav">
   <div class="container nav-inner">
     <a class="brand" href="/b-lab/">
-      <img src="/b-lab/b_lab.png" alt="B-Lab Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <img src="/b-lab/assets/img/b_lab.png" alt="B-Lab Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
       <span class="brand-fallback" style="display:none;">BIID Innovation Lab<small>B-LAB</small></span>
     </a>
     <nav class="nav-links" id="navLinks">

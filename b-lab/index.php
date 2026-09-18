@@ -53,14 +53,14 @@ require __DIR__ . '/includes/header.php';
   <div class="container">
     <div class="section-head"><div class="section-kicker">Our Services</div><h2>Business support designed around real entrepreneur needs</h2><p>Explore the service areas already featured on B-Lab.</p></div>
     <div class="home-service-grid">
-      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/A2F.png" alt="Access to Finance"></div><div class="home-service-body"><h3>Access to Finance</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
-      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/business_plan.png" alt="Business Planning"></div><div class="home-service-body"><h3>Business Planning</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
-      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/Branding.png" alt="Branding"></div><div class="home-service-body"><h3>Branding &amp; Market Readiness</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
-      <a class="home-service-card" href="/b-lab/training1.php"><div class="home-service-img"><img src="/b-lab/specialized training.png" alt="Specialized Training"></div><div class="home-service-body"><h3>Specialized Training</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
-      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/Connecting_with_investors.png" alt="Connecting with Investors"></div><div class="home-service-body"><h3>Connecting with Investors</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
-      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/prototyping.png" alt="Prototyping"></div><div class="home-service-body"><h3>Prototyping Support</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
-      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/networking.png" alt="Networking"></div><div class="home-service-body"><h3>Networking &amp; Connections</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
-      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/Product_quality.png" alt="Product Quality"></div><div class="home-service-body"><h3>Product Quality Improvement</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/assets/img/A2F.png" alt="Access to Finance"></div><div class="home-service-body"><h3>Access to Finance</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/assets/img/business_plan.png" alt="Business Planning"></div><div class="home-service-body"><h3>Business Planning</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/assets/img/Branding.png" alt="Branding"></div><div class="home-service-body"><h3>Branding &amp; Market Readiness</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/training1.php"><div class="home-service-img"><img src="/b-lab/assets/img/specialized training.png" alt="Specialized Training"></div><div class="home-service-body"><h3>Specialized Training</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/assets/img/Connecting_with_investors.png" alt="Connecting with Investors"></div><div class="home-service-body"><h3>Connecting with Investors</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/assets/img/prototyping.png" alt="Prototyping"></div><div class="home-service-body"><h3>Prototyping Support</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/assets/img/networking.png" alt="Networking"></div><div class="home-service-body"><h3>Networking &amp; Connections</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
+      <a class="home-service-card" href="/b-lab/services.php"><div class="home-service-img"><img src="/b-lab/assets/img/Product_quality.png" alt="Product Quality"></div><div class="home-service-body"><h3>Product Quality Improvement</h3><span>Learn more <i class="ti ti-arrow-right"></i></span></div></a>
     </div>
   </div>
 </section>
@@ -81,10 +81,10 @@ require __DIR__ . '/includes/header.php';
   <div class="container">
     <div class="section-head"><div class="section-kicker">Insights &amp; Blogs</div><h2>Ideas and guidance for growing entrepreneurs</h2><p>Featured B-Lab content from the current website.</p></div>
     <div class="blog-grid">
-      <article class="blog-card"><img src="/b-lab/blog-1.jpg" alt="Women entrepreneurs"><div class="blog-body"><span>Entrepreneurship</span><h3>What Women Should Know Before Becoming Entrepreneurs</h3></div></article>
-      <article class="blog-card"><img src="/b-lab/blog-2.jpg" alt="Growing a business"><div class="blog-body"><span>Business Growth</span><h3>Growing Your Business 101</h3></div></article>
-      <article class="blog-card"><img src="/b-lab/Blog-3.jpg" alt="Empowering women entrepreneurs"><div class="blog-body"><span>Women in Business</span><h3>Empowering Women Entrepreneurs</h3></div></article>
-      <article class="blog-card"><img src="/b-lab/blog-4.jpg" alt="Digital strategies"><div class="blog-body"><span>Digital Growth</span><h3>3 Digital Strategies Every Entrepreneur Should Implement Now</h3></div></article>
+      <article class="blog-card"><img src="/b-lab/assets/img/blog-1.jpg" alt="Women entrepreneurs"><div class="blog-body"><span>Entrepreneurship</span><h3>What Women Should Know Before Becoming Entrepreneurs</h3></div></article>
+      <article class="blog-card"><img src="/b-lab/assets/img/blog-2.jpg" alt="Growing a business"><div class="blog-body"><span>Business Growth</span><h3>Growing Your Business 101</h3></div></article>
+      <article class="blog-card"><img src="/b-lab/assets/img/Blog-3.jpg" alt="Empowering women entrepreneurs"><div class="blog-body"><span>Women in Business</span><h3>Empowering Women Entrepreneurs</h3></div></article>
+      <article class="blog-card"><img src="/b-lab/assets/img/blog-4.jpg" alt="Digital strategies"><div class="blog-body"><span>Digital Growth</span><h3>3 Digital Strategies Every Entrepreneur Should Implement Now</h3></div></article>
     </div>
   </div>
 </section>
