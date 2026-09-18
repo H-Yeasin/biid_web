@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BIID Foundation UK | Connecting UK Resources, Expertise & Markets</title>
     <meta name="description" content="BIID Foundation UK connects UK resources, expertise and markets with innovative development solutions in Bangladesh and beyond.">
-    <link rel="icon" href="../img/BIID.jpg">
+    <link rel="icon" href="../img/favicon/favicon-32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -181,7 +181,7 @@
 <header class="nav">
     <div class="container nav-inner">
         <a class="brand" href="#top">
-            <img src="../img/BIID foundation_Logo.jpeg" alt="BIID Foundation" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <img src="../img/biid-logo.png" alt="BIID Foundation" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
             <span class="brand-fallback" style="display:none;">BIID Foundation UK<small>LEADING THROUGH INNOVATION</small></span>
         </a>
         <nav class="nav-links" id="navLinks">
