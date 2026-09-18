@@ -12,6 +12,9 @@
                 <a href="UK/" class="btn btn-secondary" aria-label="Visit BIID Foundation UK">
                     <i class="ti ti-world"></i> BIID Foundation UK <i class="ti ti-arrow-up-right"></i>
                 </a>
+                <a href="b-lab/" class="btn btn-secondary" aria-label="Visit BIID Innovation Lab (B-Lab)">
+                    <i class="ti ti-bulb"></i> BIID Innovation Lab (B-Lab) <i class="ti ti-arrow-up-right"></i>
+                </a>
             </div>
         </div>
     </div>

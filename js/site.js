@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'blab': {
             title: 'BIID Innovation Lab (B-Lab)',
             desc: 'BIID Innovation Lab (B-Lab) supports rural youth entrepreneurs, especially in agriculture, by connecting innovation, entrepreneurship support, training, and access to business development opportunities.',
-            url: 'https://www.biid.org.bd/b-lab/'
+            url: 'b-lab/'
         },
         'ekrishok': {
             title: 'e-Krishok',

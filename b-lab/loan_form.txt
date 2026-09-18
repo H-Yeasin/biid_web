@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মেকডেটিং ব্যাংক লিপিন্ট</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>মেকডেটিং ব্যাংক লিপিন্ট</h1>
+    <h2>এমআরআই ব্যাংকিং ডিভিশন<br>ঢাকা</h2>
+    
+    <h3>প্রিয় মহোদয়,</h3>
+    <p>
+        আপনার কাছে নিম্নলিখিত তথ্যগুলি পূরণের স্বার্থে আমাদের প্রতিষ্ঠানের পক্ষ থেকে আপনার
+        প্রয়োজনীয় তথ্যের অনুরোধ জানানো হচ্ছে।
+    </p>
+
+    <h3>১. তথ্য বিবরণীর জন্য আবেদনকৃত কনটেন্ট পত্র:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>সিরিয়াল নং</th>
+                <th>বিবরণ</th>
+                <th>মুখ্য</th>
+                <th>বার্তা</th>
+                <th>সাল</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.১</td>
+                <td>শেষ নাম (নথি প্রমাণ)</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>1.২</td>
+                <td>ব্যক্তিগত তথ্য</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>1.৩</td>
+                <td>পেশাগত তথ্য</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <!-- Additional rows as necessary -->
+        </tbody>
+    </table>
+
+    <h3>২. অন্যান্য তথ্য:</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>২.১</td>
+                <td>অন্য কোন তথ্য</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>২.২</td>
+                <td>মন্তব্য</td>
+                <td><input type="text"></td>
+            </tr>
+            <!-- Additional rows as necessary -->
+        </tbody>
+    </table>
+
+    <h3>৩. স্বাক্ষর:</h3>
+    <p>
+        <label for="signature">স্বাক্ষর:</label>
+        <input type="text" id="signature">
+    </p>
+
+    <footer>
+        <p>আবেদনকারীর স্বাক্ষর ও তারিখ</p>
+    </footer>
+</body>
+</html>

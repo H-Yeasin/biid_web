@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Credit Provider Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3f5eb] font-sans">
+
+  <!-- Header -->
+ <header class="bg-white px-8 py-4 flex items-center justify-between border-b">
+   <a href="/b-lab/index.html">  <img src="b_lab.png" alt="" class="h-10" /></a>
+    <nav class="space-x-6 text-sm">
+      <a href="/b-lab/index.html" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About Us</a>
+      <a href="/b-lab/services.html" class="hover:underline">Services</a>
+      <a href="/b-lab/your_partner.html" class="hover:underline">Access to Finance</a>
+      <a href="https://biid.org.bd/b-lab/banks.html" class="hover:underline">Bank's Loan info</a>
+      <a href="/b-lab/entreprenuers_profile.html" class="hover:underline">Meet Our Entrepreneurs</a>
+      <!--<a href="/b-lab/training.html" class="hover:underline">Training</a>-->
+      <a href="/b-lab/Contact_Us.html" class="hover:underline">Contact Us</a>
+    </nav>
+    <div class="space-x-4">
+       <a href="https://fill.formnx.com/f/registration-11cy77" target="_blank"><button class="bg-green-700 text-white px-4 py-2 rounded-full text-sm">Registration</button> </a>
+      <a href="https://biid.org.bd/b-lab/login.html" target="_blank"><button class="bg-green-700 text-white px-4 py-2 rounded-full text-sm">Log In</button></a>
+    </div>
+  </header>
+  <div class="bg-green-700 py-8 text-center text-white font-bold text-2xl tracking-wide">
+    Find Your Credit <br/> Providers Detail
+  </div>
+
+  <!-- Search Form -->
+  <div class="max-w-4xl mx-auto mt-8 border border-green-700 rounded-xl p-6 bg-white">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+      <label class="font-semibold">Location</label>
+      <select class="border border-gray-400 w-full px-2 py-1">
+        <option>Select Location</option>
+        <option>Lalmonirhat</option>
+        <option>Kurigram</option>
+        <option>Rajshahi</option>
+      </select>
+
+      <label class="font-semibold">Loan Amount</label>
+      <select class="border border-gray-400 w-full px-2 py-1">
+        <option>Select Amount</option>
+        <option>BDT 100000 - 200000</option>
+      </select>
+
+      <label class="font-semibold">Category</label>
+      <input type="text" class="border border-gray-400 w-full px-2 py-1" placeholder="Category" />
+
+      <label class="font-semibold">Type of Business</label>
+      <input type="text" class="border border-gray-400 w-full px-2 py-1" placeholder="Business Type" />
+    </div>
+
+    <div class="mt-6 text-right">
+      <button class="bg-green-700 text-white px-6 py-2 rounded-full">Submit</button>
+    </div>
+  </div>
+
+  <!-- Search Details Header -->
+  <div class="max-w-4xl mx-auto mt-10 bg-green-700 text-white text-center py-3 text-lg font-semibold rounded-full">
+    Your Search Result
+  </div>
+
+  <!-- Results Table -->
+  <div class="max-w-5xl mx-auto mt-6 border border-green-700 rounded-xl bg-white p-4">
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border border-green-700">
+        <thead class="bg-white">
+          <tr class="text-sm font-semibold">
+            <th class="border border-green-700 px-3 py-2">Name of Bank</th>
+            <th class="border border-green-700 px-3 py-2">District</th>
+            <th class="border border-green-700 px-3 py-2">Branch</th>
+            <th class="border border-green-700 px-3 py-2">Address</th>
+            <th class="border border-green-700 px-3 py-2">Contact</th>
+            <th class="border border-green-700 px-3 py-2">Loan Amount</th>
+            <th class="border border-green-700 px-3 py-2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Row 1 -->
+          <tr>
+            <td class="border border-green-700 px-3 py-2">City Bank</td>
+            <td class="border border-green-700 px-3 py-2">Lalmonirhat</td>
+            <td class="border border-green-700 px-3 py-2">Aditmari</td>
+            <td class="border border-green-700 px-3 py-2">19, bazar road</td>
+            <td class="border border-green-700 px-3 py-2">017XXXXXXX</td>
+            <td class="border border-green-700 px-3 py-2">BDT 1,00000-2,00000</td>
+            <td class="border border-green-700 px-3 py-2 text-center">
+              <a href="city_bank.html"><button class="border px-3 py-1 text-sm rounded">Apply</button></a>
+            </td>
+          </tr>
+          <!-- Row 2 -->
+          <tr>
+            <td class="border border-green-700 px-3 py-2">Sonali Bank</td>
+            <td class="border border-green-700 px-3 py-2">Lalmonirhat</td>
+            <td class="border border-green-700 px-3 py-2">Kaligonj</td>
+            <td class="border border-green-700 px-3 py-2">88,bazar road</td>
+            <td class="border border-green-700 px-3 py-2">016XXXXXXX</td>
+            <td class="border border-green-700 px-3 py-2">BDT 1,00000-1,50000</td>
+            <td class="border border-green-700 px-3 py-2 text-center">
+              <button class="border px-3 py-1 text-sm rounded">Apply</button>
+            </td>
+          </tr>
+          <!-- Row 3 -->
+          <tr>
+            <td class="border border-green-700 px-3 py-2">Eastern Bank</td>
+            <td class="border border-green-700 px-3 py-2">Lalmonirhat</td>
+            <td class="border border-green-700 px-3 py-2">Sadar</td>
+            <td class="border border-green-700 px-3 py-2">11A, Sadar Road</td>
+            <td class="border border-green-700 px-3 py-2">015XXXXXXX</td>
+            <td class="border border-green-700 px-3 py-2">BDT 1,00000 - 2,00000</td>
+            <td class="border border-green-700 px-3 py-2 text-center">
+              <button class="border px-3 py-1 text-sm rounded">Apply</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<br>
+<!-- Footer -->
+  <footer class="bg-[#f5f6f1] px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <div>
+      <h3 class="font-bold text-lg mb-2">Disclaimer</h3>
+      <p>
+        This platform connects entrepreneurs with financial institutions and offers growth tools but does not guarantee funding, investment, or success. All information is for general guidance only and not professional advice. Users should conduct their own research and seek expert consultation. The platform is not liable for any losses or damages from reliance on provided information.
+      </p>
+    </div>
+    <div>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.social-icon {
+       font-size: 24px;
+       color:  #004f98;
+       margin-right: 10px;
+       text-decoration: none; /* Remove underlines */
+   }
+
+   .social-icon:hover {
+       opacity: 0.7;
+   }</style>
+       
+     <center> 
+     <table borber=0><tr><td><h3 class="font-bold text-lg mb-2">Important Links</h3></td></tr><tr><td>Know Your Financing Partners</td></tr>
+     <tr><td>Meet Our Entrepreneurs</td></tr>
+     <tr><td>Training Schedule</td></tr>
+     </table><br>
+     <table borber=0><tr><td><h3 class="font-bold text-lg mb-2">Social Media Links</h3></td></tr><tr><td><a href="https://www.facebook.com/BLab.RuralInnovationLab" target="_blank" class="social-icon">
+       <i class="fab fa-facebook-f"></i>
+       
+   </a>
+   
+ 
+   <a href="https://www.linkedin.com/company/107119669/admin/dashboard/" target="_blank" class="social-icon">
+       <i class="fab fa-linkedin"></i>
+   </a></td></tr>
+    </table>
+     
+     
+     </center>
+    </div>
+    <div>
+      <h3 class="font-bold text-lg mb-2">Contact Us</h3>
+      <p>Bangladesh Institute of ICT in Development (BIID)</p>
+      <p>House No. 174, Level-2, Apt.B3, Road No. 02, Mohakhali DOHS, Dhaka-1206 Bangladesh.</p>
+      <p>Phone: (+880) 2 8714169, (+880) 2 9845909</p>
+      <p>Fax: (+880) 2 8714168</p>
+      <p>Email: info@biid.org.bd</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+# Redirect old B-Lab HTML routes to the new PHP pages.
+RewriteRule ^index\.html$ /b-lab/ [R=301,L]
+RewriteRule ^services\.html$ /b-lab/services.php [R=301,L]
+RewriteRule ^your_partner\.html$ /b-lab/your_partner.php [R=301,L]
+RewriteRule ^banks\.html$ /b-lab/banks.php [R=301,L]
+RewriteRule ^entreprenuers_profile\.html$ /b-lab/entreprenuers_profile.php [R=301,L]
+RewriteRule ^Contact_Us\.html$ /b-lab/Contact_Us.php [R=301,L]
+RewriteRule ^training1\.html$ /b-lab/training1.php [R=301,L]
+RewriteRule ^investors_dashboard\.html$ /b-lab/investors_dashboard.php [R=301,L]
+RewriteRule ^login\.html$ /b-lab/login.php [R=301,L]

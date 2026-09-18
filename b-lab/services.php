@@ -1,0 +1,13 @@
+<?php
+$pageTitle = "Services | B-Lab";
+$pageDescription = "Explore B-Lab business advisory, technical support, skills development, networking and innovation services.";
+$activePage = "services";
+require __DIR__ . '/includes/header.php';
+?>
+
+<main>
+<section class="page-hero"><div class="container"><div class="page-kicker"><i class="ti ti-briefcase"></i> What We Offer</div><h1>Services</h1><p>Business advisory, technical support, skills development, networking and innovation support for entrepreneurs.</p></div></section>
+<section class="section section-alt"><div class="container"><div class="section-head"><div class="section-kicker">B-Lab Support</div><h2>Practical services for business growth</h2><p>Select a category to see the support currently listed by B-Lab.</p></div><div class="services-list"><details class="service-detail" open><summary>A. Business Information and Advisory:</summary><div class="detail-body"><ol><li>Standard business management information</li><li>Guidelines for Bank Loan Application</li><li>Database of Eligible Loan Application</li><li>List of Banks and relevant loan products</li><li>Readiness Assessment for Loan Application</li><li>Reference Documents- Forms, Report, Circulars etc.</li></ol></div></details><details class="service-detail"><summary>B. Technical Support:</summary><div class="detail-body"><ol><li>Preparation of Entrepreneurs Profile</li><li>Bank Loan Application Preparation</li><li>Support to Prepare Financial Statements</li><li>Support Preparing Business Plan</li><li>Virtual Incubation (Online based advisory and technical services)</li></ol></div></details><details class="service-detail"><summary>C. Skill Development:</summary><div class="detail-body"><ol><li>Digital Skills for Business Management and Operation</li><li>Training and Workshops on Specific Topics</li><li>Financial Literacy</li><li>Basic Digital / ICT Skills</li><li>Boot Camp (Thematic, Sector Specific)</li></ol></div></details><details class="service-detail"><summary>D. Networking:</summary><div class="detail-body"><ol><li>Connecting with relevant Stakeholders like Business Association, Banks, BSCIC, SME Foundation, Non-Banking Financial Organization etc</li><li>Registering for various resources and support</li><li>Connecting with service providers (Demand and Supply Side)</li><li>Exhibition</li></ol></div></details><details class="service-detail"><summary>E. Innovation:</summary><div class="detail-body"><ol><li>Innovation Lab</li><li>Design Camp</li><li>Business Plan Competitions</li><li>Action Research</li></ol></div></details></div></div></section>
+</main>
+
+<?php require __DIR__ . '/includes/footer.php'; ?>

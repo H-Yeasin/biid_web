@@ -16,6 +16,7 @@
             <nav>
                 <a href="about.php">About BIID Foundation</a>
                 <a href="UK/">BIID Foundation UK</a>
+                <a href="b-lab/">BIID Innovation Lab (B-Lab)</a>
                 <a href="our-work.php">Projects &amp; Programmes</a>
                 <a href="products.php">Products</a>
                 <a href="team.php">Team</a>
