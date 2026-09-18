@@ -11,7 +11,7 @@ $active = 'team';
 <body>
 
 <?php require __DIR__ . '/includes/nav.php'; ?>
-<?php require __DIR__ . '/includes/team.php'; ?>
+<?php require __DIR__ . '/includes/team-content.php'; ?>
 <?php require __DIR__ . '/includes/cta-band.php'; ?>
 <?php require __DIR__ . '/includes/footer.php'; ?>
 

@@ -73,7 +73,7 @@
                     <strong><?php echo htmlspecialchars($pub['title']); ?></strong>
                     <span>BIID Foundation &amp; PROTIC (Oxfam / Monash University)</span>
                 </div>
-                <a href="<?php echo rawurlencode($pub['file']); ?>" class="btn btn-secondary btn-sm" target="_blank">Download PDF</a>
+                <a href="assets/newsletters/<?php echo rawurlencode($pub['file']); ?>" class="btn btn-secondary btn-sm" target="_blank">Download PDF</a>
             </div>
             <?php endforeach; ?>
             <div class="pub-item">

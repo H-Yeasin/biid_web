@@ -12,7 +12,7 @@ $active = 'products';
 
 <?php require __DIR__ . '/includes/nav.php'; ?>
 
-<?php require __DIR__ . '/includes/products.php'; ?>
+<?php require __DIR__ . '/includes/products-content.php'; ?>
 <?php require __DIR__ . '/includes/cta-band.php'; ?>
 <?php require __DIR__ . '/includes/footer.php'; ?>
 

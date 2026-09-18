@@ -13,12 +13,12 @@ $active = 'home';
 <body>
 
 <?php require __DIR__ . '/includes/nav.php'; ?>
-<?php require __DIR__ . '/includes/hero.php'; ?>
-<?php require __DIR__ . '/includes/mission-strip.php'; ?>
-<?php require __DIR__ . '/includes/program-pillars.php'; ?>
-<?php require __DIR__ . '/includes/featured-news.php'; ?>
-<?php require __DIR__ . '/includes/products-spotlight.php'; ?>
-<?php require __DIR__ . '/includes/partners-strip.php'; ?>
+<?php require __DIR__ . '/includes/home-hero.php'; ?>
+<?php require __DIR__ . '/includes/home-mission-strip.php'; ?>
+<?php require __DIR__ . '/includes/home-program-pillars.php'; ?>
+<?php require __DIR__ . '/includes/home-featured-news.php'; ?>
+<?php require __DIR__ . '/includes/home-products-spotlight.php'; ?>
+<?php require __DIR__ . '/includes/home-partners-strip.php'; ?>
 <?php require __DIR__ . '/includes/cta-band.php'; ?>
 <?php require __DIR__ . '/includes/footer.php'; ?>
 
