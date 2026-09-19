@@ -25,6 +25,6 @@ $active = 'home';
 <!-- ============================================================
      SCRIPTS
      ============================================================ -->
-<script src="js/site.js"></script>
+<?php require __DIR__ . '/includes/scripts.php'; ?>
 </body>
 </html>

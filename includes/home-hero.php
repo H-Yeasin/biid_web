@@ -21,9 +21,9 @@
 
         <div class="hero-stats">
             <div class="stat"><div class="stat-num">2008</div><div class="stat-lbl">Founded</div></div>
-            <div class="stat"><div class="stat-num">18</div><div class="stat-lbl">Active Programs</div></div>
-            <div class="stat"><div class="stat-num">37</div><div class="stat-lbl">Partners &amp; Donors</div></div>
-            <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Focus Areas</div></div>
+            <div class="stat"><div class="stat-num" data-count="18">18</div><div class="stat-lbl">Active Programs</div></div>
+            <div class="stat"><div class="stat-num" data-count="37">37</div><div class="stat-lbl">Partners &amp; Donors</div></div>
+            <div class="stat"><div class="stat-num" data-count="4">4</div><div class="stat-lbl">Focus Areas</div></div>
         </div>
     </div>
 </section>
