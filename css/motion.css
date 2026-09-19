@@ -1,0 +1,170 @@
+/* ============================================================
+   MOTION: scroll reveals, count-up, magnetism, custom cursor
+   Loaded after custom.css. Behaviour lives in js/motion.js.
+   Reveals use @keyframes (not transitions) so they never clobber
+   the transition lists on .btn / .pillar-card / .proj-card, and
+   they only touch opacity / translate / scale / clip-path so the
+   existing :hover transforms and JS magnetism (translate) compose.
+   ============================================================ */
+:root {
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --rv-dur: 0.7s;
+    --rv-dist: 24px;
+}
+
+.hero-stats .stat-num { font-variant-numeric: tabular-nums; }
+
+/* ============================================================
+   SCROLL REVEAL
+   JS adds [data-reveal] only to elements below the fold, so
+   nothing is hidden without JS or for reduced-motion users.
+   ============================================================ */
+@keyframes mo-rise { from { opacity: 0; translate: 0 var(--rv-dist); } to { opacity: 1; translate: 0 0; } }
+@keyframes mo-pop  { from { opacity: 0; scale: 0.88; } to { opacity: 1; scale: 1; } }
+@keyframes mo-wipe {
+    from { clip-path: inset(0 0 100% 0 round var(--rv-r, 0px)); }
+    to   { clip-path: inset(0 0 0 0 round var(--rv-r, 0px)); }
+}
+@keyframes mo-zoom { from { scale: 1.16; } to { scale: 1; } }
+
+@media (prefers-reduced-motion: no-preference) {
+    /* Hero intro: pure CSS so it can't flash and needs no JS */
+    #hero .hero-inner > * { animation: mo-rise 0.8s var(--ease-out) backwards; }
+    #hero .hero-inner > :nth-child(2) { animation-delay: 0.06s; }
+    #hero .hero-inner > :nth-child(3) { animation-delay: 0.16s; }
+    #hero .hero-inner > :nth-child(4) { animation-delay: 0.26s; }
+    #hero .hero-inner > :nth-child(5) { animation-delay: 0.36s; }
+
+    /* Below-the-fold hidden states */
+    [data-reveal]:not(.is-in) { opacity: 0; translate: 0 var(--rv-dist); }
+    [data-reveal="pop"]:not(.is-in) { translate: none; scale: 0.88; }
+    [data-reveal="mask"]:not(.is-in) {
+        opacity: 1;
+        translate: none;
+        clip-path: inset(0 0 100% 0 round var(--rv-r, 0px));
+    }
+
+    /* Reveal animations (fill-mode backwards: values are released when done) */
+    [data-reveal="up"].is-in   { animation: mo-rise var(--rv-dur) var(--ease-out) backwards; }
+    [data-reveal="pop"].is-in  { animation: mo-pop 0.6s var(--ease-out) backwards; }
+    [data-reveal="mask"].is-in { animation: mo-wipe 0.9s var(--ease-out) backwards; }
+    /* Image inside a clipping container zooms while the container wipes in */
+    [data-reveal="mask"].is-in > img {
+        animation: mo-zoom 1.3s var(--ease-out) backwards;
+        animation-delay: inherit;
+    }
+    /* Elements scrolled past before they were seen: show without animating */
+    [data-reveal].is-instant,
+    [data-reveal].is-instant > img { animation: none; }
+
+    .news-card-item img[data-reveal],
+    .hot-news-banner img[data-reveal] { --rv-r: 6px; }
+}
+
+@media print {
+    [data-reveal] {
+        opacity: 1 !important;
+        translate: none !important;
+        scale: none !important;
+        clip-path: none !important;
+        animation: none !important;
+    }
+    .mo-cursor { display: none !important; }
+}
+
+/* ============================================================
+   CUSTOM CURSOR
+   The node is created by JS and only takes over once a real mouse
+   move is seen: html.has-mo-cursor hides the native cursor, and
+   form fields / iframes keep it.
+   ============================================================ */
+html.has-mo-cursor,
+html.has-mo-cursor :is(a, button, label, summary, [role="button"], .btn, .proj-card) { cursor: none; }
+html.has-mo-cursor :is(input, textarea, select) { cursor: revert; }
+html.has-mo-cursor iframe { cursor: auto; }
+
+.mo-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 3000;               /* above the project popup overlay (2000) and sticky nav (1000) */
+    pointer-events: none;
+    transition: opacity 0.2s;
+    --mo-c: var(--g3);
+    --mo-tint: rgba(29, 158, 117, 0.08);    /* --g3 */
+    --mo-halo: rgba(255, 255, 255, 0.9);
+}
+.mo-cursor.on-dark { --mo-c: var(--g4); --mo-tint: rgba(93, 202, 165, 0.14); --mo-halo: rgba(4, 52, 44, 0.55); }
+.mo-cursor.is-link { --mo-c: var(--ac); --mo-tint: rgba(27, 111, 224, 0.10); }    /* --ac */
+.mo-cursor.on-dark.is-link { --mo-c: #fff; --mo-tint: rgba(255, 255, 255, 0.12); }
+.mo-cursor.is-hidden,
+.mo-cursor.is-native { opacity: 0; }
+
+/* .mo-dot / .mo-ring are 0x0 anchors that JS moves with transform; the shapes inside are centred on them */
+.mo-dot, .mo-ring { position: absolute; top: 0; left: 0; width: 0; height: 0; will-change: transform; }
+
+.mo-dot-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: var(--mo-c);
+    box-shadow: 0 0 0 1.5px var(--mo-halo);
+    transition: scale 0.18s var(--ease-out), background-color 0.2s;
+}
+
+.mo-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--rw, 34px);
+    height: var(--rh, 34px);
+    translate: -50% -50%;
+    border: 1.5px solid var(--mo-c);
+    border-radius: var(--rr, 50%);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.28s var(--ease-out), height 0.28s var(--ease-out), border-radius 0.28s var(--ease-out),
+                background-color 0.2s, border-color 0.2s, opacity 0.2s, scale 0.18s var(--ease-out);
+}
+.mo-label {
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+/* Size vars live on the root so the inline --rw / --rh / --rr that JS sets for snapping win */
+.mo-cursor.is-link { --rw: 52px; --rh: 52px; }
+.mo-cursor.is-label { --rw: 72px; --rh: 72px; }
+
+/* Links & buttons: ring grows and tints */
+.mo-cursor.is-link .mo-shape { background: var(--mo-tint); opacity: 1; }
+
+/* Magnetic buttons: ring snaps to the element (JS sets --rw / --rh / --rr) */
+.mo-cursor.is-snap .mo-shape { background: var(--mo-tint); opacity: 1; }
+
+/* Cards: labelled disc ("View" / "Open") */
+.mo-cursor.is-label .mo-shape { background: var(--g2); border-color: transparent; opacity: 0.94; }
+.mo-cursor.on-dark.is-label .mo-shape { background: var(--g4); }
+.mo-cursor.on-dark.is-label .mo-label { color: var(--g1); }
+.mo-cursor.is-label .mo-label { opacity: 1; }
+.mo-cursor.is-label .mo-dot-shape { scale: 0; }
+
+/* Press feedback */
+.mo-cursor.is-down .mo-shape { scale: 0.85; }
+.mo-cursor.is-down .mo-dot-shape { scale: 0.7; }
+
+@media (forced-colors: active) {
+    .mo-cursor { display: none; }
+}
