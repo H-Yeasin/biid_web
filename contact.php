@@ -16,6 +16,6 @@ $active = 'contact';
 <?php require __DIR__ . '/includes/social.php'; ?>
 <?php require __DIR__ . '/includes/footer.php'; ?>
 
-<script src="js/site.js"></script>
+<?php require __DIR__ . '/includes/scripts.php'; ?>
 </body>
 </html>

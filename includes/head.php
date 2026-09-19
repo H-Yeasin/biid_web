@@ -20,3 +20,4 @@ $page_description = $page_description ?? "BIID Foundation is a Bangladesh-based 
 
 <!-- Site styles -->
 <link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/motion.css?v=<?php echo filemtime(__DIR__ . '/../css/motion.css'); ?>">
